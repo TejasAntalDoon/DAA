@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include<stdlib.h>
+//#include<math.h>
+
+int Board[4][4];
+int attackin(int i,int j,int k,int l)
+{
+    if((abs(i-k)!=abs(j-l))&&(j!=l)&&(i!=k))
+    return 0;
+    else
+    return 1;
+}
+int main()
+{
+   int result;
+   result=attackin(1,1,2,3);
+   printf("\n %d",result);
+   // for (i=)
+}
